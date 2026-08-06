@@ -34,9 +34,19 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: true
-        body:
+        base_link:
           Value: true
-        camera_init:
+        docking_station:
+          Value: true
+        imu_link:
+          Value: true
+        odom:
+          Value: true
+        result:
+          Value: true
+        rslidar:
+          Value: true
+        world:
           Value: true
       Marker Scale: 1
       Name: TF
@@ -44,8 +54,8 @@ Visualization Manager:
       Show Axes: true
       Show Names: false
       Tree:
-        camera_init:
-          body:
+        odom:
+          base_link:
             {}
       Update Interval: 0
       Value: true
@@ -119,8 +129,8 @@ Visualization Manager:
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
-        Max Value: 11.062739372253418
-        Min Value: -13.864188194274902
+        Max Value: 2.493983030319214
+        Min Value: -1.0162566900253296
         Value: true
       Axis: Z
       Channel Name: intensity
@@ -221,7 +231,7 @@ Visualization Manager:
   Enabled: true
   Global Options:
     Background Color: 0; 0; 0
-    Fixed Frame: camera_init
+    Fixed Frame: odom
     Frame Rate: 30
   Name: root
   Tools:
@@ -264,7 +274,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 216.99887084960938
+      Distance: 16.831037521362305
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -279,10 +289,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 1.5697963237762451
+      Pitch: 0.9047961235046387
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz_default_plugins)
-      Yaw: 4.88355827331543
+      Yaw: 3.4085569381713867
     Saved: ~
 Window Geometry:
   Displays:
